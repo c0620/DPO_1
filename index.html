@@ -6,231 +6,225 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REVO coffee</title>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <header>
-        <img src="./assets/img/LOGO.png" alt="revo">
-        <nav>
-            <button class="cart">
-                <img src="./assets/icons/shopping-cart.png" alt="shopping cart">
+    <header class="header">
+        <img class="header__logo" src="./assets/img/LOGO.png" alt="revo">
+        <main class="header__text hero">
+            <h1 class="hero__title">Your <span class="hero__accent">personalized</span> coffee</h1>
+        </main>
+        <div class="header__prev"></div>
+        <nav class="header__nav nav">
+            <button class="nav__cart">
+                <img class="nav__cart-img" src="./assets/icons/shopping-cart.png" alt="shopping cart">
                 1
             </button>
-            <ul>
-                <li><a href="#">TRANG CHỦ</a></li>
-                <li><a href="#">COFFEE</a></li>
-                <li><a href="#">PHIN MẠ MÀU</a></li>
-                <li><a href="#">COMBO PHIN PHÊ</a></li>
-                <li><a href="#">GIFTSET</a></li>
-                <li><a href="#">LIÊN HỆ</a></li>
+            <ul class="nav__list">
+                <li class="nav__item">TRANG CHỦ</li>
+                <li class="nav__item"><a class="nav__link" href="#">COFFEE</a></li>
+                <li class="nav__item"><a class="nav__link" href="#base">PHIN MẠ MÀU</a></li>
+                <li class="nav__item"><a class="nav__link" href="#combo">COMBO PHIN PHÊ</a></li>
+                <li class="nav__item"><a class="nav__link" href="#gift">GIFTSET</a></li>
+                <li class="nav__item"><a class="nav__link" href="#fav">LIÊN HỆ</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Your <span>personalized</span> coffee</h1>
-        <img src="./assets/img/video_prev.png" alt="background image">
-    </main>
 
-    <section>
-        <h3>Your Personalized Coffee</h3>
-        <h2>COFFEE BUILD YOUR BASE</h2>
-        <div class="advantages">
-            <div class="advantage">
-                <img src="./assets/icons/nguon_goc.png" alt="Nguồn gốc">
-                <h4>Nguồn gốc</h4>
-                <p>Nh&#7919;ng&nbsp;h&#7841;t&nbsp;c&#224; ph&#234; Arabica,<br /> Robusta &#273;&#7841;t&nbsp;ch&#7845;t&nbsp;l&#432;&#7907;ng&nbsp;theo<br /> ti&#234;u&nbsp;chu&#7849;n&nbsp;qu&#7889;c&nbsp;t&#7871;.
+    <section class="advantages" id="base">
+        <h3 class="advantages__subtitle h-subtitle">Your Personalized Coffee</h3>
+        <h2 class="advantages__title h-title">COFFEE BUILD YOUR BASE</h2>
+        <div class="advantages__list">
+            <div class="advantages__item adv-item">
+                <img class="adv-item__image" src="./assets/icons/nguon_goc.png" alt="Nguồn gốc">
+                <h4 class="adv-item__title">Nguồn gốc</h4>
+                <p class="adv-item__text">Nh&#7919;ng&nbsp;h&#7841;t&nbsp;c&#224; ph&#234; Arabica,<br /> Robusta &#273;&#7841;t&nbsp;ch&#7845;t&nbsp;l&#432;&#7907;ng&nbsp;theo<br /> ti&#234;u&nbsp;chu&#7849;n&nbsp;qu&#7889;c&nbsp;t&#7871;.
                 </p>
             </div>
-            <div class="advantage">
-                <img src="./assets/icons/chat_luong.png" alt="Chất lượng">
-                <h4>Chất lượng</h4>
-                <p>T&#7915;ng&nbsp;m&#7897;t&nbsp;h&#7841;t&nbsp;c&#224; ph&#234; l&#224; c&#7843; m&#7897;t<br /> qu&#225; tr&#236;nh&nbsp;t&#7853;p&nbsp;trung cao &#273;&#7897; c&#7911;a<br /> ngh&#7879; nh&#226;n&nbsp;c&#224; ph&#234;</p>
+            <div class="advantages__item adv-item">
+                <img class="adv-item__image" src="./assets/icons/chat_luong.png" alt="Chất lượng">
+                <h4 class="adv-item__title">Chất lượng</h4>
+                <p class="adv-item__text">T&#7915;ng&nbsp;m&#7897;t&nbsp;h&#7841;t&nbsp;c&#224; ph&#234; l&#224; c&#7843; m&#7897;t<br /> qu&#225; tr&#236;nh&nbsp;t&#7853;p&nbsp;trung cao &#273;&#7897; c&#7911;a<br /> ngh&#7879; nh&#226;n&nbsp;c&#224; ph&#234;</p>
             </div>
-            <div class="advantage">
-                <img src="./assets/icons/cac_loai_hat.png" alt="Các loại hạt">
-                <h4>Các loại hạt</h4>
-                <p>70% ch&#7845;t&nbsp;l&#432;&#7907;ng&nbsp;t&#225;ch&nbsp;c&#224; ph&#234;<br /> &#273;&#7871;n&nbsp;t&#7915; ngu&#7891;n&nbsp;g&#7889;c&nbsp;v&#224; ch&#7845;t&nbsp;l&#432;&#7907;ng<br /> green bean.</p>
+            <div class="advantages__item adv-item">
+                <img class="adv-item__image" src="./assets/icons/cac_loai_hat.png" alt="Các loại hạt">
+                <h4 class="adv-item__title">Các loại hạt</h4>
+                <p class="adv-item__text">70% ch&#7845;t&nbsp;l&#432;&#7907;ng&nbsp;t&#225;ch&nbsp;c&#224; ph&#234;<br /> &#273;&#7871;n&nbsp;t&#7915; ngu&#7891;n&nbsp;g&#7889;c&nbsp;v&#224; ch&#7845;t&nbsp;l&#432;&#7907;ng<br /> green bean.</p>
             </div>
-            <div class="advantage">
-                <img src="./assets/icons/pha_che.png" alt="Pha chế">
-                <h4>Pha chế</h4>
-                <p>Nh&#7919;ng&nbsp;h&#7841;t&nbsp;c&#224; ph&#234; &#273;&#432;&#7907;c&nbsp;l&#7897;t&nbsp;x&#225;c<br /> qua qu&#225; tr&#236;nh&nbsp;rang xay k&#7929; l&#432;&#7905;ng<br /> v&#224; nghi&#234;m&nbsp;ng&#7863;t.</p>
+            <div class="advantages__item adv-item">
+                <img class="adv-item__image" src="./assets/icons/pha_che.png" alt="Pha chế">
+                <h4 class="adv-item__title">Pha chế</h4>
+                <p class="adv-item__text">Nh&#7919;ng&nbsp;h&#7841;t&nbsp;c&#224; ph&#234; &#273;&#432;&#7907;c&nbsp;l&#7897;t&nbsp;x&#225;c<br /> qua qu&#225; tr&#236;nh&nbsp;rang xay k&#7929; l&#432;&#7905;ng<br /> v&#224; nghi&#234;m&nbsp;ng&#7863;t.</p>
             </div>
         </div>
     </section>
 
-    <section>
-        <h3>Choose Your Favorite</h3>
-        <h2>CHUẨN GU ĐÚNG VỊ</h2>
-        <div class="hor-cards">
-            <div class="hor-card">
-                <img src="./assets/img/revo_combo_morning.png" alt="REVO Morning">
+    <section class="products" id="fav">
+        <h3 class="products__subtitle h-subtitle">Choose Your Favorite</h3>
+        <h2 class="products__title h-title">CHUẨN GU ĐÚNG VỊ</h2>
+        <div class="products__cards">
+            <div class="products__card hor-card">
+                <img class="hor-card__image" src="./assets/img/revo_combo_morning.png" alt="REVO Morning">
                 <div class="hor-card__content">
-                    <p class="hor-card__price price">99.000</p>
-                    <h4>REVO Morning</h4>
-                    <p>đắng, hậu ngọt, hương hoa</p>
-                    <div class="hor-card__actions actions">
-                        <button class="actions__main">MUA NGAY</button>
-                        <button class="actions__sec">CHI TIẾT</button>
+                    <div class="hor-card__main">
+                        <p class="hor-card__price price">99.000</p>
+                        <h4 class="hor-card__title title">REVO Morning</h4>
+                    </div>
+                    <p class="hor-card__subtitle subtitle">đắng, hậu ngọt, hương hoa</p>
+                    <div class="hor-card__actions">
+                        <button class="hor-card__buy button-buy">MUA NGAY</button>
+                        <button class="hor-card__more button-more">CHI TIẾT</button>
                     </div>
                 </div>
             </div>
-            <div class="hor-card">
-                <img src="./assets/img/revo_origin.png" alt="REVO Origin">
+            <div class="products__card hor-card">
+                <img class="hor-card__image" src="./assets/img/revo_origin.png" alt="REVO Origin">
                 <div class="hor-card__content">
-                    <p class="hor-card__price price">139.000</p>
-                    <h4>REVO Origin</h4>
-                    <p>đắng, hậu ngọt, hương hoa</p>
-                    <div class="hor-card__actions actions">
-                        <button class="actions__main">MUA NGAY</button>
-                        <button class="actions__sec">CHI TIẾT</button>
+                    <div class="hor-card__main">
+                        <p class="hor-card__price price">139.000</p>
+                        <h4 class="hor-card__title title">REVO Origin</h4>
+                    </div>
+                    <p class="hor-card__subtitle subtitle">đắng, hậu ngọt, hương hoa</p>
+                    <div class="hor-card__actions">
+                        <button class="hor-card__buy button-buy">MUA NGAY</button>
+                        <button class="hor-card__more button-more">CHI TIẾT</button>
                     </div>
                 </div>
             </div>
-            <div class="hor-card">
-                <img src="./assets/img/revo_everyday.png" alt="REVO Everyday">
+            <div class="products__card hor-card">
+                <img class="hor-card__image" src="./assets/img/revo_everyday.png" alt="REVO Everyday">
                 <div class="hor-card__content">
-                    <p class="hor-card__price price">85.000</p>
-                    <h4>REVO Everyday</h4>
-                    <p>đắng, hậu ngọt, hương hoa</p>
-                    <div class="hor-card__actions actions">
-                        <button class="actions__main">MUA NGAY</button>
-                        <button class="actions__sec">CHI TIẾT</button>
+                    <div class="hor-card__main">
+                        <p class="hor-card__price price">85.000</p>
+                        <h4 class="hor-card__title title">REVO Everyday</h4>
+                    </div>
+                    <p class="hor-card__subtitle subtitle">đắng, hậu ngọt, hương hoa</p>
+                    <div class="hor-card__actions">
+                        <button class="hor-card__buy button-buy">MUA NGAY</button>
+                        <button class="hor-card__more button-more">CHI TIẾT</button>
                     </div>
                 </div>
             </div>
-            <div class="hor-card">
-                <img src="./assets/img/revo_dam_da.png" alt="REVO Đậm Đà">
+            <div class="products__card hor-card">
+                <img class="hor-card__image" src="./assets/img/revo_dam_da.png" alt="REVO Đậm Đà">
                 <div class="hor-card__content">
-                    <p class="hor-card__price price">75.000</p>
-                    <h4>REVO Đậm Đà</h4>
-                    <p>đắng, hậu ngọt, hương hoa</p>
-                    <div class="hor-card__actions actions">
-                        <button class="actions__main">MUA NGAY</button>
-                        <button class="actions__sec">CHI TIẾT</button>
+                    <div class="hor-card__main">
+                        <p class="hor-card__price price">75.000</p>
+                        <h4 class="hor-card__title title">REVO Đậm Đà</h4>
                     </div>
-                </div>
-            </div>
-            <div class="hor-card">
-                <img src="./assets/img/revo_combo_morning.png" alt="REVO Morning">
-                <div class="hor-card__content">
-                    <p class="hor-card__price price">99.000</p>
-                    <h4>REVO Morning</h4>
-                    <p>đắng, hậu ngọt, hương hoa</p>
-                    <div class="hor-card__actions actions">
-                        <button class="actions__main">MUA NGAY</button>
-                        <button class="actions__sec">CHI TIẾT</button>
-                    </div>
-                </div>
-            </div>
-            <div class="hor-card">
-                <img src="./assets/img/revo_everyday.png" alt="REVO Everyday">
-                <div class="hor-card__content">
-                    <p class="hor-card__price price">85.000</p>
-                    <h4>REVO Everyday</h4>
-                    <p>đắng, hậu ngọt, hương hoa</p>
-                    <div class="hor-card__actions actions">
-                        <button class="actions__main">MUA NGAY</button>
-                        <button class="actions__sec">CHI TIẾT</button>
+                    <p class="hor-card__subtitle subtitle">đắng, hậu ngọt, hương hoa</p>
+                    <div class="hor-card__actions">
+                        <button class="hor-card__buy button-buy">MUA NGAY</button>
+                        <button class="hor-card__more button-more">CHI TIẾT</button>
                     </div>
                 </div>
             </div>
         </div>
-        <button>→</button>
+        <!-- <button class="products__next next">→</button> -->
     </section>
 
-    <section>
-        <h3>Best Gift For Best Friend</h3>
-        <h2>GIFTSET</h2>
+    <section class="giftset" id="gift">
+        <h3 class="giftset__subtitle h-subtitle">Best Gift For Best Friend</h3>
+        <h2 class="giftset__title h-title">GIFTSET</h2>
 
-        <div class="tabs">
+        <div class="giftset__tabs tabs">
             <div class="tabs__content">
-                <img src="./assets/img/revo_giftset.png" alt="Cà phê phin Việt Nam">
-                <p class="price ">285.000</p>
-                <h4>Giftset "Cà phê phin Việt Nam "</h4>
-                <p>M&#243;n&nbsp;qu&#224; tuy&#7879;t&nbsp;v&#7901;i&nbsp;d&#224;nh&nbsp;cho ng&#432;&#7901;i&nbsp;s&#224;nh&nbsp;c&#224; ph&#234;. H&#7841;t&nbsp;c&#224; ph&#234;<br /> &#273;&#432;&#7907;c&nbsp;Revo c&#7849;n&nbsp;tr&#7885;ng&nbsp;ch&#7885;n&nbsp;l&#7921;a,
+                <img class="tabs__image" src="./assets/img/revo_giftset.png" alt="Cà phê phin Việt Nam">
+                <p class="tabs__price price">285.000</p>
+                <h4 class="tabs__title title">Giftset "Cà phê phin Việt Nam "</h4>
+                <p class="tabs__subtitle subtitle">M&#243;n&nbsp;qu&#224; tuy&#7879;t&nbsp;v&#7901;i&nbsp;d&#224;nh&nbsp;cho ng&#432;&#7901;i&nbsp;s&#224;nh&nbsp;c&#224; ph&#234;. H&#7841;t&nbsp;c&#224; ph&#234;<br /> &#273;&#432;&#7907;c&nbsp;Revo c&#7849;n&nbsp;tr&#7885;ng&nbsp;ch&#7885;n&nbsp;l&#7921;a,
                     rang xay theo c&#244;ng&nbsp;ngh&#7879; v&#224; b&#237;<br /> quy&#7871;t&nbsp;h&#7885;c&nbsp;h&#7887;i&nbsp;t&#7915; nh&#7919;ng&nbsp;ngh&#7879; nh&#226;n&#7893;i&nbsp;ti&#7871;ng, c&#249;ng&nbsp;v&#7899;i&nbsp;t&#236;nh<br /> y&#234;u,
                     s&#7921; &#273;am&nbsp;m&#234; c&#7911;a&nbsp;ng&#432;&#7901;i&nbsp;l&#224;m&nbsp;c&#224; ph&#234;&hellip; t&#7841;o&nbsp;ra&nbsp;nh&#7919;ng&nbsp;t&#225;ch&nbsp;c&#224;<br /> ph&#234; tinh khi&#7871;t&nbsp;ch&#7881; d&#224;nh&nbsp;ri&#234;ng&nbsp;cho
                     b&#7841;n.
                 </p>
-                <div class="tabs__details details ">
-                    <div class="details__detail ">
-                        <img src="./assets/icons/IC_coffee.png" alt="coffee">
-                        <div class="details__text ">
-                            <p>Loại hạt</p>
-                            <p>Fine Robusta Blend</p>
+                <div class="tabs__details details">
+                    <div class="details__detail">
+                        <img class="details__image" src="./assets/icons/IC_coffee.png" alt="coffee">
+                        <div class="details__text">
+                            <p class="details__subtitle">Loại hạt</p>
+                            <p class="details__title">Fine Robusta Blend</p>
                         </div>
                     </div>
-                    <div class="details__detail ">
-                        <img src="./assets/icons/IC_Mountain.png" alt="mountain">
-                        <div class="details__text ">
-                            <p>Độ cao</p>
-                            <p>700 - 800m</p>
+                    <div class="details__detail">
+                        <img class="details__image" src="./assets/icons/IC_Mountain.png" alt="mountain">
+                        <div class="details__text">
+                            <p class="details__subtitle">Độ cao</p>
+                            <p class="details__title">700 - 800m</p>
                         </div>
                     </div>
                 </div>
-                <div class="tabs__actions actions">
-                    <button class="actions__main">MUA NGAY</button>
-                    <button class="actions__sec">CHI TIẾT</button>
+                <div class="tabs__actions">
+                    <button class="tabs__buy button-buy">MUA NGAY</button>
+                    <button class="tabs__more button-more">CHI TIẾT</button>
                 </div>
             </div>
-            <div class="tabs__controls ">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
+            <div class="tabs__controls">
+                <button class="tabs__control">1</button>
+                <button class="tabs__control">2</button>
+                <button class="tabs__control">3</button>
             </div>
         </div>
     </section>
 
-    <section>
-        <h3>Your Personalized Coffee</h3>
-        <h2>COMBO PHIN PHÊ</h2>
-        <div class="ver-cards ">
-            <div class="ver-card">
-                <img src="./assets/img/revo_combo_dam_da.png" alt="Combo Revo Đậm Đà">
-                <p class="price">147.000 <s>155.000</s></p>
-                <h4>Combo Revo Đậm Đà</h4>
-                <p>Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê</p>
-                <div class="ver-card__actions actions">
-                    <button class="actions__main">MUA NGAY</button>
-                    <button class="actions__sec">CHI TIẾT</button>
+    <section class="combos" id="combo">
+        <h3 class="combos__subtitle h-subtitle">Your Personalized Coffee</h3>
+        <h2 class="combos__title h-title">COMBO PHIN PHÊ</h2>
+        <div class="combos__ver-cards">
+            <div class="combos__ver-card ver-card">
+                <img class="ver-card__image" src="./assets/img/revo_combo_dam_da.png" alt="Combo Revo Đậm Đà">
+                <div class="ver-card__text">
+                    <p class="ver-card__price price">147.000 <s class="ver-card__old-price">155.000</s></p>
+                    <h4 class="ver-card__title title">Combo Revo Đậm Đà</h4>
+                    <p class="ver-card__subtitle subtitle">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê</p>
+                    <div class="ver-card__actions">
+                        <button class="ver-card__buy button-buy">MUA NGAY</button>
+                        <button class="ver-card__more button-more">CHI TIẾT</button>
+                    </div>
                 </div>
             </div>
-            <div class="ver-card">
-                <img src="./assets/img/revo_combo_everyday.png" alt="Combo Revo Everyday">
-                <p class="price">56.000 <s>165.000</s></p>
-                <h4>Combo Revo Everyday</h4>
-                <p>Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê</p>
-                <div class="ver-card__actions actions">
-                    <button class="actions__main">MUA NGAY</button>
-                    <button class="actions__sec">CHI TIẾT</button>
+            <div class="combos__ver-card ver-card">
+                <img class="ver-card__image" src="./assets/img/revo_combo_everyday.png" alt="Combo Revo Everyday">
+                <div class="ver-card__text">
+                    <p class="ver-card__price price">56.000 <s class="ver-card__old-price">165.000</s></p>
+                    <h4 class="ver-card__title title">Combo Revo Everyday</h4>
+                    <p class="ver-card__subtitle subtitle">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê</p>
+                    <div class="ver-card__actions">
+                        <button class="ver-card__buy button-buy">MUA NGAY</button>
+                        <button class="ver-card__more button-more">CHI TIẾT</button>
+                    </div>
                 </div>
             </div>
-            <div class="ver-card">
-                <img src="./assets/img/revo_combo_honey.png" alt="Combo Revo Honey">
-                <p class="price"> 275.000 <s>260.000</s></p>
-                <h4>Combo Revo Honey</h4>
-                <p>Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê</p>
-                <div class="ver-card__actions actions">
-                    <button class="actions__main">MUA NGAY</button>
-                    <button class="actions__sec">CHI TIẾT</button>
+            <div class="combos__ver-card ver-card">
+                <img class="ver-card__image" src="./assets/img/revo_combo_honey.png" alt="Combo Revo Honey">
+                <div class="ver-card__text">
+                    <p class="ver-card__price price"> 275.000 <s class="ver-card__old-price">260.000</s></p>
+                    <h4 class="ver-card__title title">Combo Revo Honey</h4>
+                    <p class="ver-card__subtitle subtitle">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê</p>
+                    <div class="ver-card__actions">
+                        <button class="ver-card__buy button-buy">MUA NGAY</button>
+                        <button class="ver-card__more button-more">CHI TIẾT</button>
+                    </div>
                 </div>
             </div>
-            <div class="ver-card">
-                <img src="./assets/img/revo_combo_everyday.png" alt="Combo Revo Everyday">
-                <p class="price">56.000 <s>165.000</s></p>
-                <h4>Combo Revo Everyday</h4>
-                <p>Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê</p>
-                <div class="ver-card__actions actions">
-                    <button class="actions__main">MUA NGAY</button>
-                    <button class="actions__sec">CHI TIẾT</button>
+            <!-- <div class="combos__ver-card ver-card">
+                <img class="ver-card__image" src="./assets/img/revo_combo_everyday.png" alt="Combo Revo Everyday">
+                <div class="ver-card__text">
+                    <p class="ver-card__price price">56.000 <s class="ver-card__old-price">165.000</s></p>
+                    <h4 class="ver-card__title title">Combo Revo Everyday</h4>
+                    <p class="ver-card__subtitle subtitle">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê</p>
+                    <div class="ver-card__actions">
+                        <button class="ver-card__buy button-buy">MUA NGAY</button>
+                        <button class="ver-card__more button-more">CHI TIẾT</button>
+                    </div>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <button>→</button>
+        <!-- <button class="combos__next next">→</button> -->
     </section>
-    <footer>
-        <p>© Revo Coffee Việt Nam - 2018</p>
+    <footer class="footer">
+        <p class="footer__text">© Revo Coffee Việt Nam - 2018</p>
     </footer>
 </body>
 
