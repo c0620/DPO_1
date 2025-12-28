@@ -110,7 +110,7 @@ section {
     &__prev {
         grid-column: 2;
         grid-row: 1 / -1;
-        background-image: url(./assets/img/video_prev.png);
+        background-image: url(../assets/img/video_prev.png);
         background-size: cover;
         background-position: center;
         position: relative;
@@ -238,7 +238,7 @@ section {
 .hor-card {
     @include shadow();
     display: flex;
-    width: calc(70vw / 2 - 40px);
+    width: 650px;
     background-color: #fff;
     height: 280px;
     &__image {
@@ -276,7 +276,7 @@ section {
     justify-content: center;
     &__image {
         position: absolute;
-        left: -50%;
+        left: -500px;
         top: 55%;
         transform: translate(50%, -50%);
     }
@@ -347,14 +347,10 @@ section {
     }
     &__text {
         margin-left: 8px;
-    }
-    &__subtitle {
-        font-family: Nunito;
         font-size: 16px;
+        font-family: Nunito;
     }
     &__title {
-        font-family: Nunito;
-        font-size: 16px;
         font-weight: 700;
     }
 }
@@ -415,4 +411,200 @@ footer {
     font-weight: 400;
     font-size: 14px;
     padding: 20px 0;
+}
+
+@media (max-width: 1024px) {
+    .advantages {
+        margin-top: 60px;
+    }
+    .advantages,
+    .products,
+    .giftset,
+    .combos {
+        padding-top: 60px;
+    }
+    .header {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .hero {
+        &__title {
+            font-size: 32px;
+        }
+    }
+    .giftset {
+        &__tabs {
+            margin-top: 40px;
+        }
+    }
+    .tabs {
+        &__image {
+            height: 300px;
+            left: -300px;
+        }
+        &__content {
+            margin-left: 10%;
+            padding: 30px;
+            padding-left: 200px;
+        }
+    }
+    .hor-card {
+        width: auto;
+        &__actions {
+            gap: 20px;
+        }
+    }
+    .ver-card {
+        width: 320px;
+        height: 100%;
+    }
+    .details {
+        width: 100%;
+        &__image {
+            height: 40px;
+        }
+    }
+    .combos {
+        &__ver-cards {
+            margin-top: 40px;
+        }
+    }
+    .button-buy {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+    .button-more {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================
+   720px ↓ (Mobile)
+   ========================= */
+
+@media (max-width: 768px) {
+    .products {
+        background: linear-gradient(90deg, $blue 20%, rgba(255, 255, 255, 1) 20%);
+    }
+    .advantages__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .adv-item {
+        width: 300px;
+    }
+    .tabs {
+        &__content {
+            height: 600px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+    }
+    .ver-card {
+        width: 30%;
+    }
+    .details {
+        &__text {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        grid-template-rows: 1fr 2fr 6fr;
+        grid-template-columns: auto;
+        &__prev {
+            grid-row: 3;
+            grid-column: 1;
+        }
+        &__nav {
+            grid-row: 2;
+            grid-column: 1;
+        }
+        &__text {
+            grid-row: 3;
+            z-index: 1;
+        }
+    }
+    .hero {
+        &__title {
+            padding: 20px 0px;
+            background-color: white;
+        }
+    }
+    .products {
+        background: linear-gradient(90deg, #6a7b94 20%, rgba(255, 255, 255, 1) 20%);
+    }
+    .nav {
+        gap: 20px;
+        flex-direction: row;
+    }
+    .combos {
+        &__ver-cards {
+            flex-direction: column;
+            align-items: center;
+        }
+        background: linear-gradient(90deg,
+        #fff 80%,
+        #6a7b94 80%);
+    }
+    .ver-card {
+        width: 90%;
+        &__actions {
+            gap: 20px;
+        }
+    }
+    .hor-card {
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        &__image {
+            width: 100%;
+        }
+    }
+    .tabs {
+        flex-direction: column;
+        margin-top: 200px;
+        align-items: center;
+        &__image {
+            left: 50%;
+            top: -55%;
+            transform: translate(-50%, 50%);
+            height: 300px;
+            width: 300px;
+        }
+        &__content {
+            padding: 20px;
+            padding-top: 100px;
+            width: 80vw;
+            margin-left: 0%;
+        }
+        &__controls {
+            width: 80vw;
+        }
+        &__control:first-child {
+            width: 100%;
+        }
+    }
+}
+
+
+/* =========================
+   320px ↓ (Small mobile)
+   ========================= */
+
+@media (max-width: 425px) {
+    .hero__title {
+        font-size: 26px;
+    }
+    .price {
+        font-size: 18px;
+    }
+    .title {
+        font-size: 16px;
+    }
 }
