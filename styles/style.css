@@ -5,7 +5,8 @@ html {
 
 a,
 button {
-  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.2s ease, opacity 0.2s ease;
 }
 
 .button-buy {
@@ -16,15 +17,18 @@ button {
   font-family: Nunito;
   font-weight: 700;
 }
+
 .button-buy:hover {
   background-color: rgb(185.8240837696, 140.9204188482, 92.3759162304);
   transform: translateY(-2px);
   box-shadow: 1px 5px 5px rgba(156, 156, 156, 0.2);
 }
+
 .button-buy:active {
   transform: translateY(0);
   box-shadow: none;
 }
+
 .button-buy:focus-visible {
   outline: 2px solid #405066;
   outline-offset: 3px;
@@ -35,13 +39,16 @@ button {
   font-family: Nunito;
   font-weight: 700;
 }
+
 .button-more:hover {
   color: rgb(44.3373493976, 55.421686747, 70.6626506024);
   text-decoration: underline;
 }
+
 .button-more:active {
   opacity: 0.7;
 }
+
 .button-more:focus-visible {
   outline: 2px solid #c6a179;
   outline-offset: 3px;
@@ -87,11 +94,13 @@ section {
   grid-template-rows: auto 1fr;
   height: 100vh;
 }
+
 .header__logo {
   grid-column: 1;
   grid-row: 1;
   padding: 40px;
 }
+
 .header__text {
   grid-column: 1;
   grid-row: 2;
@@ -99,6 +108,7 @@ section {
   display: flex;
   align-items: center;
 }
+
 .header__prev {
   grid-column: 2;
   grid-row: 1/-1;
@@ -107,6 +117,7 @@ section {
   background-position: center;
   position: relative;
 }
+
 .header__nav {
   grid-column: 3;
   grid-row: 1/-1;
@@ -125,6 +136,7 @@ section {
   gap: calc(50% - 135px);
   font-family: Montserrat;
 }
+
 .nav__cart {
   align-self: flex-start;
   background: none;
@@ -133,6 +145,7 @@ section {
   cursor: pointer;
   position: relative;
 }
+
 .nav__cart-count {
   position: absolute;
   top: -6px;
@@ -143,25 +156,31 @@ section {
   font-size: 12px;
   padding: 2px 6px;
 }
+
 .nav__item {
   margin-bottom: 18px;
 }
+
 .nav__link {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
   letter-spacing: 1px;
 }
+
 .nav__link {
   position: relative;
 }
+
 .nav__link:hover {
   color: #c6a179;
 }
+
 .nav__link:focus-visible {
   outline: 2px solid #c6a179;
   outline-offset: 4px;
 }
+
 .nav__link:active {
   opacity: 0.6;
 }
@@ -174,6 +193,7 @@ section {
   text-transform: uppercase;
   color: #405066;
 }
+
 .hero__accent {
   background-color: #c7a17a;
   color: #fff;
@@ -184,6 +204,7 @@ section {
 .advantages {
   margin-top: 120px;
 }
+
 .advantages__list {
   margin-top: 80px;
 }
@@ -194,11 +215,13 @@ section {
   font-family: Nunito;
   font-weight: 500;
 }
+
 .adv-item__title {
   margin-top: 16px;
   font-weight: 700;
   font-size: 24px;
 }
+
 .adv-item__text {
   margin-top: 8px;
 }
@@ -209,6 +232,7 @@ section {
   background: #405066;
   background: linear-gradient(90deg, #405066 30%, rgb(255, 255, 255) 30%);
 }
+
 .products__cards {
   display: flex;
   justify-content: center;
@@ -216,6 +240,7 @@ section {
   margin-top: 80px;
   gap: 20px;
 }
+
 .products__next {
   height: 100%;
 }
@@ -227,9 +252,11 @@ section {
   background-color: #fff;
   height: 280px;
 }
+
 .hor-card__image {
   background-color: #eceff4;
 }
+
 .hor-card__content {
   width: 100%;
   padding: 40px;
@@ -238,9 +265,11 @@ section {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .hor-card__title {
   margin-top: 8px;
 }
+
 .hor-card__actions {
   display: flex;
   justify-content: space-between;
@@ -250,6 +279,7 @@ section {
   padding: 120px 0;
   background: linear-gradient(90deg, #eceff4 80%, #fff 80%);
 }
+
 .giftset__tabs {
   margin-top: 80px;
 }
@@ -258,12 +288,14 @@ section {
   display: flex;
   justify-content: center;
 }
+
 .tabs__image {
   position: absolute;
   left: -500px;
   top: 55%;
   transform: translate(50%, -50%);
 }
+
 .tabs__content {
   box-shadow: 1px 5px 5px rgba(156, 156, 156, 0.2);
   display: flex;
@@ -278,22 +310,27 @@ section {
   margin-left: 20%;
   height: 480px;
 }
+
 .tabs__subtitle {
   margin-top: 8px;
 }
+
 .tabs__details {
   display: flex;
 }
+
 .tabs__actions {
   display: flex;
   width: 80%;
   justify-content: space-between;
 }
+
 .tabs__controls {
   display: flex;
   flex-direction: column;
   background-color: #eceff4;
 }
+
 .tabs__control {
   height: 33%;
   font-family: Montserrat;
@@ -302,20 +339,24 @@ section {
   color: #405066;
   opacity: 50%;
 }
+
 .tabs__control:first-child {
   background-color: #fff;
   box-shadow: 1px 5px 5px rgba(156, 156, 156, 0.2);
   width: 80px;
   opacity: 100%;
 }
+
 .tabs__control {
   cursor: pointer;
   transition: background-color 0.3s ease, opacity 0.3s ease;
 }
+
 .tabs__control:hover {
   opacity: 1;
   background-color: rgb(245.69, 247.16, 249.61);
 }
+
 .tabs__control:active {
   transform: scale(0.97);
 }
@@ -325,15 +366,18 @@ section {
   width: 80%;
   justify-content: space-between;
 }
+
 .details__detail {
   display: flex;
   color: #405066;
 }
+
 .details__text {
   margin-left: 8px;
   font-size: 16px;
   font-family: Nunito;
 }
+
 .details__title {
   font-weight: 700;
 }
@@ -342,6 +386,7 @@ section {
   padding: 120px 0px;
   background: linear-gradient(90deg, #fff 80%, #405066 80%);
 }
+
 .combos__ver-cards {
   display: flex;
   gap: 20px;
@@ -354,10 +399,12 @@ section {
   box-shadow: 1px 5px 5px rgba(156, 156, 156, 0.2);
   text-align: left;
 }
+
 .ver-card__text {
   padding: 40px;
   background-color: #fff;
 }
+
 .ver-card__subtitle {
   overflow: hidden;
   display: -webkit-box;
@@ -365,17 +412,21 @@ section {
   -webkit-line-clamp: 2;
   line-clamp: 2;
 }
+
 .ver-card__actions {
   margin-top: 24px;
 }
+
 .ver-card__image {
   background-color: #eceff4;
   width: 100%;
 }
+
 .ver-card__actions {
   display: flex;
   justify-content: space-between;
 }
+
 .ver-card__old-price {
   color: #405066;
   opacity: 0.7;
@@ -451,6 +502,7 @@ footer {
     font-size: 12px;
   }
 }
+
 @media (max-width: 768px) {
   .products {
     background: linear-gradient(90deg, #405066 20%, rgb(255, 255, 255) 20%);
@@ -477,6 +529,7 @@ footer {
     font-size: 12px;
   }
 }
+
 @media (max-width: 600px) {
   .header {
     grid-template-rows: 1fr 1fr 6fr;
@@ -551,6 +604,7 @@ footer {
     width: 100%;
   }
 }
+
 .nav-mobile {
   display: none;
 }
@@ -566,6 +620,7 @@ footer {
     font-size: 16px;
   }
 }
+
 .nav__burger {
   display: none;
   width: 32px;
@@ -656,6 +711,7 @@ footer {
     text-align: center;
   }
 }
+
 .scroll-top {
   position: fixed;
   right: 24px;
@@ -684,4 +740,6 @@ footer {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
